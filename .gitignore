@@ -1,0 +1,9 @@
+# folders
+_dev
+node_modules
+z_downloads
+.vscode
+
+# files
+*.text
+markdown.css
