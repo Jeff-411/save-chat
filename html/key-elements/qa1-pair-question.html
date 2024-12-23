@@ -1,0 +1,70 @@
+<!-- TIP
+  Navigation -> search for 'Note'
+-->
+
+<!-- Note: Q/A pair 
+  JavaScript selector:
+    export const UI = {
+      QA_PAIR:
+        `main .isolate:nth-of-type(2) .pb-\\[144px\\] > :first-child > :first-child` +
+        `> div:has(> *):not(.pointer-events-none)`,
+    }
+-->
+<div class="col-span-8">
+  <!-- Note: Question -->
+  <div class="my-md md:my-lg">
+    <div class="group/title relative">
+      <div class="absolute -inset-md"></div>
+      <div
+        class="pointer-events-none absolute -inset-sm rounded-md border border-border/30 opacity-0 duration-150 group-hover/title:opacity-100"></div>
+      <h1
+        class="group/query relative whitespace-pre-line break-words [word-break:break-word] default font-display text-3xl font-regular text-textMain dark:text-textMainDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
+        What day is it today
+      </h1>
+      <div
+        class="pointer-events-none absolute bottom-0 right-0 flex items-center rounded-md border border-border/50 bg-background p-2xs opacity-0 shadow-sm duration-150 group-hover/title:pointer-events-auto group-hover/title:opacity-100 md:bottom-auto md:top-[calc(100%+var(--size-sm))] md:-translate-y-1/2">
+        <button
+          type="button"
+          class="focus-visible:bg-offsetPlus dark:focus-visible:bg-offsetPlusDark md:hover:bg-offsetPlus text-textOff dark:text-textOffDark md:hover:text-textMain dark:md:hover:bg-offsetPlusDark dark:md:hover:text-textMainDark font-sans focus:outline-none outline-none outline-transparent transition duration-300 ease-out font-sans select-none items-center relative group/button justify-center text-center items-center rounded cursor-point active:scale-[0.97] active:duration-150 active:ease-outExpo origin-center whitespace-nowrap inline-flex text-xs font-medium px-sm font-medium h-6">
+          <div class="flex items-center min-w-0 justify-center gap-xs">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="pen-to-square"
+              class="svg-inline--fa fa-pen-to-square fa-fw fa-1x"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                fill="currentColor"
+                d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152L0 424c0 48.6 39.4 88 88 88l272 0c48.6 0 88-39.4 88-88l0-112c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 22.1-17.9 40-40 40L88 464c-22.1 0-40-17.9-40-40l0-272c0-22.1 17.9-40 40-40l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 64z"></path>
+            </svg>
+            <div class="text-align-center relative truncate leading-loose">Edit Query</div>
+          </div>
+        </button>
+        <div
+          class="mx-2xs h-4 border-l border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-transparent"></div>
+        <button
+          type="button"
+          class="focus-visible:bg-offsetPlus dark:focus-visible:bg-offsetPlusDark md:hover:bg-offsetPlus text-textOff dark:text-textOffDark md:hover:text-textMain dark:md:hover:bg-offsetPlusDark dark:md:hover:text-textMainDark font-sans focus:outline-none outline-none outline-transparent transition duration-300 ease-out font-sans select-none items-center relative group/button justify-center text-center items-center rounded cursor-point active:scale-[0.97] active:duration-150 active:ease-outExpo origin-center whitespace-nowrap inline-flex text-xs font-medium aspect-square h-6">
+          <div class="flex items-center min-w-0 justify-center gap-xs">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="copy"
+              class="svg-inline--fa fa-copy fa-fw fa-1x"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
