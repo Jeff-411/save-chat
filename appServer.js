@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
 
-const PORT = 8080
+const PORT = 3000
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
 })

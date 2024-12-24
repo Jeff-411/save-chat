@@ -1,13 +1,9 @@
-// Escaped Selectors
+// ui.js
 
-// prettier-ignore
-export const UI = {
-  CONVERSATION_CONTAINER: 
-  `main .isolate:nth-of-type(2) .pb-\\[144px\\]`,
-  THREAD_CONTAINER: 
-  `main .isolate:nth-of-type(2) .pb-\\[144px\\] > :first-child`,
-  QA_PAIRS_CONTAINER: `main .isolate:nth-of-type(2) .pb-\\[144px\\] > :first-child > :first-child`,
-  QA_PAIR:
-    `main .isolate:nth-of-type(2) .pb-\\[144px\\] > :first-child > :first-child` +
-    `> div:has(> *):not(.pointer-events-none)`,
-}
+const base = `main .isolate:nth-of-type(2)`
+
+// UI constants
+const CONVERSATION = `${base} .pb-\\[144px\\]` // 1st class: mx-auto
+const THREAD = `${CONVERSATION} > :first-child` // 1st class: relative
+const QA_PAIRS = `${THREAD} > :first-child` // no classes
+const QA_PAIR = `${QA_PAIRS} > div:has(> *):not(.pointer-events-none)` // 1st class: pb-lg
