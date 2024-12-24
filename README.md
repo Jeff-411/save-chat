@@ -15,8 +15,8 @@ Extend the range of available file type options by supporting the Bookmarklet wi
 ## Project structure
 
 - `index.html` contains the `<main>` element in the Perplexity DOM and links to `app.js` with a `<script src="/app.js" type="module"></script>` statement.
-- `app.js` is the entry point for Bookmarklet development. It will import modules from the `modules/` folder in the projects root directory.
-- `appSever.js` creates a local development server at `http://localhost:3000`
+- `app.js` is the entry point for Bookmarklet development.
+- `appSever.js` creates a local development server at `http://localhost:3000`.
 
 ## Project status
 
