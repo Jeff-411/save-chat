@@ -1,4 +1,6 @@
-console.log(`app.js reached...`)
+// constants.js
+
+// UI SELECTORS
 
 // Scope the selectors
 const base = `main .isolate:nth-of-type(2)`
