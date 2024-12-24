@@ -12,9 +12,23 @@ A variety of browser extensions make it easy to download online AI chats as Mark
 
 Extend the range of available file type options by supporting the Bookmarklet with a server running the **Pandoc** universal document converter, which reliably handles the wide variety of file types listed on its Home page. [[^]](https://pandoc.org/).
 
+## Project structure
+
+- `index.html` contains the `<main>` element in the Perplexity DOM and links to `app.js` with a `<script src="/app.js" type="module"></script>` statement.
+- `app.js` is the entry point for Bookmarklet development. It will import modules from the `modules/` folder in the projects root directory.
+- `appSever.js` creates a local development server at `http://localhost:3000`
+
 ## Project status
 
-View the project action plan and current status [here](./docs/action-plan.md).
+You can view the project action plan and current status [here](./docs/action-plan.md).
+
+## Usage
+
+After installing the project dependencies:
+
+- Start the server with `npm run dev appServer.js` or `npx nodemon appServer.js`,
+- Open `http://localhost:3000` in your browser, and
+- Open the DevTools Console (ctrl + shift + J) to view your logs and interact with the app.
 
 ## Links
 
