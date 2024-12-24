@@ -1,4 +1,4 @@
-I'm working on the last item of the Analysis Phase in the [Action Plan](./tasks.md) and have identified some top level UI constants (see: `app.js`) that will be used in the Development Phase. Before proceeding any further I want to:
+I'm working on the last item of the Analysis Phase in the [Action Plan](./docs/action-plan.md) and have identified some top level UI constants (see: `app.js`) that will be used in the Development Phase. Before proceeding any further I want to:
 
 - begin scaffolding the project structure by:
   - creating a `modules/` folder in the project's root directory, and
