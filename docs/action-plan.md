@@ -2,10 +2,10 @@
 
 ## Analysis Phase
 
-- [ ] Capture HTML structure of Perplexity threads
-- [ ] Break down HTML into logical sections
-- [ ] Identify key elements containing thread content
-- [ ] Create a `UI` constant for use in the Development Phase
+- [x] Capture HTML structure of Perplexity threads
+- [x] Break down HTML into logical sections
+- [x] Identify key elements containing thread content
+- [ ] Create UI constants for use in the Development Phase
 
 ## Development Phase
 
