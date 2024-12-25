@@ -8,9 +8,10 @@ const CONVERSATION = `${base} .pb-\\[144px\\]`
 const THREAD = `${CONVERSATION} > :first-child`
 const QA_PAIRS = `${THREAD} > :first-child`
 const QA_PAIR = `${QA_PAIRS} > div:has(> *):not(.pointer-events-none)`
-const CHAT = `${QA_PAIR} > div > div`
+const CHAT = `${QA_PAIR} > div > div` // .col-span-8
 const QUESTION = `${CHAT} > :first-child`
-const ANSWER = `${CHAT} > :last-child`
+// const ANSWER = `${CHAT} > :last-child`
+const ANSWER = `${CHAT} > :nth-child(3)`
 
 function testSelectors(selectors) {
   const results = {}
