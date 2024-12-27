@@ -1,0 +1,20 @@
+.col-span-8 > div {margin-bottom: 10px;}
+
+/* QUESTION -----------------------------------------------------------*/
+.col-span-8 > :nth-child(1) {border: 5px solid red;}
+/* "Edit Query" button */
+/* - ok */
+/* .col-span-8 > :nth-child(1) .pointer-events-none {background-color: aqua;} */
+/* - preferred b/c there's another .absolute div */
+.col-span-8 > :nth-child(1) .absolute {background-color: aqua;}
+
+/* ANSWER -------------------------------------------------------------*/
+.col-span-8 > :nth-child(2) {border: 5px solid blue;}
+/* perplexity icon */
+.col-span-8 > :nth-child(2) > div > :first-child {background-color: yellow;}
+/* bottom buttons row */
+.col-span-8 > :nth-child(2) .mt-sm.flex.items-center.justify-between {border: 5px solid black;}
+
+/* RELATED ------------------------------------------------------------*/
+.col-span-8 > :nth-child(3) {border: 5px solid green;}
+.col-span-8 > :nth-child(3) svg {background-color: orange;}

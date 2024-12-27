@@ -2,34 +2,40 @@
 
 ## Problem
 
-A variety of browser extensions make it easy to download online AI chats as Markdown files. Markdown, however, is not the preferred file format for many, perhaps most, users chatting with AI bots &ndash; as is evidenced by the "Add file-conversion feature" action items on the roadmaps of existing extensions.
+A variety of browser extensions make it easy to download online AI chats as Markdown files. The Markdown file-type, however, is not the preferred file format for many, perhaps most, chatbot users.
 
 ## Project goal
 
 **Save Chat** aims to develop a Bookmarklet to download Perplexity AI [[^]](https://www.perplexity.ai/) chats in pretty much _any_ file format the user might want.
 
-## Project strategy
+## Strategy
 
-Extend the range of available file type options by supporting the Bookmarklet with a server running the **Pandoc** universal document converter, which reliably handles the wide variety of file types listed on its Home page. [[^]](https://pandoc.org/).
+Extend the range of available file-type options by supporting the Bookmarklet with a server running the **Pandoc** universal document converter, a utility which reliably handles the _very_ wide range of file-types listed on its Home page. [[^]](https://pandoc.org/).
 
-## Project structure
+## Structure
 
-- `index.html` contains the `<main>` element in the Perplexity DOM and links to `app.js` with `<script src="/app.js" type="module"></script>`.
-- `app.js` is the entry point for Bookmarklet development.
-- `appSever.js` creates a local development server at `http://localhost:3000`.
-- The `docs/` directory contains files and folders to document and support the development process.
+The project's root files and directories can be found in the **Project Structure** file [here](./docs/project-structure.md).
 
 ## Project status
 
-You can view the project action plan and current status [here](./docs/action-plan.md).
+As indicated in the **Project Development Action Plan** [here](./docs/action-plan.md) the project is now on **Step 2** of the **DOM Analysis Phase** which focuses on generating css selectors for increasingly complex **Chat** structures.
+
+## Workflow
+
+Use the `analyze.html` and `analyze.css` tools in the root directory to analyze the Perplexity DOM:
+
+1. Start the local server running at `http://localhost:3000`
+2. Paste the content of the file to be analyzed into `analyze.html`
+3. Open `analyze.css` to begin analysing its DOM
+4. Save the result to a new file in the `chatCss` directory for use in generating named constants for the css selectors during the final phase of the DOM analysis.
 
 ## Usage
 
-After installing the project dependencies:
+After running `npm install` to load the project dependencies:
 
-- Start the server with `npm run dev appServer.js` or `npx nodemon appServer.js`,
-- Open `http://localhost:3000` in your browser, and
-- Open the DevTools Console (ctrl + shift + J) to view your logs and interact with the app.
+1. Start the server with `npm run dev appServer.js` or `npx nodemon appServer.js`,
+2. Open `http://localhost:3000` in your browser, and
+3. Open the **DevTools Console** (ctrl + shift + J) to view your logs and interact with the app.
 
 ## Links
 

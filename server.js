@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
 
-// Get filename from command line, default to index.html
-const filename = process.argv[2] || 'index.html'
+// Get filename from command line, default to analyze.html
+const filename = process.argv[2] || 'analyze.html'
 
 const app = express()
 
