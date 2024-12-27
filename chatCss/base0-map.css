@@ -3,10 +3,7 @@
 /* QUESTION -----------------------------------------------------------*/
 .col-span-8 > :nth-child(1) {border: 5px solid red;}
 /* "Edit Query" button */
-/* - ok */
-/* .col-span-8 > :nth-child(1) .pointer-events-none {background-color: aqua;} */
-/* - preferred b/c there's another .absolute div */
-.col-span-8 > :nth-child(1) .absolute {background-color: aqua;}
+.col-span-8 > :nth-child(1) h1 + div {background-color: aqua;}
 
 /* ANSWER -------------------------------------------------------------*/
 .col-span-8 > :nth-child(2) {border: 5px solid blue;}
