@@ -1,0 +1,10 @@
+Three versions of the full path selector for the LEFT_PAIR (aka CHAT) element:
+
+css
+main .isolate:nth-of-type(2) .pb-[144px] > :first-child > div > .pb-lg > div > .col-span-8
+
+DevTools
+main .isolate:nth-of-type(2) .pb-\[144px\] > :first-child > div > .pb-lg > div > .col-span-8
+
+JavaScript
+main .isolate:nth-of-type(2) .pb-\\[144px\\] > :first-child > div > .pb-lg > div > .col-span-8

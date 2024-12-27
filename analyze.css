@@ -1,0 +1,23 @@
+/* ICONS --------------------------------------------------------------------*/
+/* "Edit Query" button */
+.col-span-8 > :nth-child(1) .absolute {display: none;}
+/* icon - perplexity */
+.col-span-8 > :nth-child(2) > div > :first-child {display: none;}
+/* icons - answer - bottom row */
+.col-span-8 > :nth-child(2) .mt-sm.flex.items-center.justify-between {display: none;}
+/* icons - related questions section */
+.col-span-8 > :nth-child(3) svg {display: none;}
+
+/* CONTAINERS ---------------------------------------------------------------*/
+/* all children */
+.col-span-8 > div {margin-bottom: 10px;}
+/* question */
+.col-span-8 > :nth-child(1) {border: 5px solid red;}
+/* answer */
+.col-span-8 > :nth-child(2) {border: 5px solid blue;}
+/* related questions */
+.col-span-8 > :nth-child(3) {border: 5px solid green;}
+
+/* ELEMENTS -----------------------------------------------------------------*/
+/* title (question text) */
+.col-span-8 h1 {background-color: pink;}
