@@ -1,130 +1,144 @@
-/* comments syntax
-  Uppercase comments like PAIR_LEFT: 
-  - indicate elements to be exported, and
-  - derive their names from the named constants in modules/constants.js
-  
-  Lowercase comments like 'related questions container' indicate
-  non-exported elements that are included in order to capture the 
-  full DOM structure. Usage:
-  - Verify lowercase selectors by styling their element. 
-  - Toggle elements as required to highlight the exported content.
-*/
-
-// PAIR_LEFT
-.col-span-8 {
-  // separate the main containers for easier dev viewing
-  > div {
-    margin-bottom: 10px;
-  }
-
-  // QUESTION_CONTAINER
-  > .my-md {
-    border: 5px solid red;
-
-    // QUESTION_TEXT
-    h1 {
-      border: 5px dashed blue;
+// QA_PAIR
+.pb-lg {
+  // QA_PAIR_CHAT
+  .col-span-8 {
+    // separate the main containers for easier dev viewing
+    > div {
+      margin-bottom: 10px;
     }
 
-    // "Edit Query" button container
-    h1 + div {
-      background-color: aqua;
-    }
-  }
+    // QA_PAIR_CHAT_Q
+    > .my-md {
+      border: 5px solid red;
 
-  // ANSWER_CONTAINER (neither the "Question" nor "Related questions" containers)
-  > :not(.my-md):not([class='']) {
-    border: 5px solid blue;
-
-    // sources container
-    > .mb-lg {
-      border: 5px dashed red;
-      margin-bottom: 20px;
-
-      // sources - header
-      > div > div > .flex {
+      // Q_QUESTION
+      .group\/query {
         border: 5px solid black;
         margin: 10px;
+        background-color: lime;
+      }
+      // Q_QUESTION_THREAD_TITLE
+      h1.group\/query {
+        background-color: yellow;
+      }
 
-        // sources icon
-        [color='super'] > :first-child svg {
-          background-color: aqua;
-          max-height: 20px;
+      // Q_QUESTION_ICON_CONTAINER
+      .group\/query + div {
+        display: none;
+        background-color: aqua;
+        max-height: 20px;
+      }
+    }
+
+    /* QA_PAIR_CHAT_A
+     neither the "Question" nor "Related questions" containers */
+
+    > :not(.my-md):not([class='']) {
+      border: 5px solid blue;
+
+      // A_SOURCES
+      > .mb-lg {
+        border: 5px dashed red;
+        margin-bottom: 20px;
+
+        // sources - header
+        > div > div > .flex {
+          border: 5px solid black;
+          margin: 10px;
+
+          // sources icon
+          [color='super'] > :first-child svg {
+            background-color: aqua;
+            max-height: 20px;
+          }
+
+          // sources title
+          [color='super'] > :last-child {
+            background-color: pink;
+          }
         }
 
-        // sources title
-        [color='super'] > :last-child {
-          background-color: pink;
+        // sources - content
+        > div > div > .-mx-md {
+          border: 5px solid black;
+          margin: 10px;
+
+          // source menu item
+          .grid > div {
+            border: 3px solid red;
+            margin: 10px;
+          }
         }
       }
 
-      // sources - content
-      > div > div > .-mx-md {
-        border: 5px solid black;
-        margin: 10px;
+      // A_ANSWER
+      > :not(.mb-lg) {
+        border: 5px dashed red;
 
-        // source menu item
-        .grid > div {
-          border: 3px solid red;
+        // A_ANSWER_HEADER
+        > .flex [color='super'] {
+          border: 5px solid black;
+          margin: 10px;
+
+          // A_ANSWER_HEADER_ICON_CONTAINER
+          > :first-child {
+            display: none;
+            background-color: orange;
+            max-height: 20px;
+          }
+
+          // ANSWER_HEADER_TITLE
+          > :last-child {
+            background-color: aqua;
+          }
+        }
+
+        // A_ANSWER_CONTENT
+        > .mb-md {
+          border: 5px solid black;
+          margin: 10px;
+          background-color: orange;
+        }
+
+        // A_ANSWER_ICONS_CONTAINER
+        > .mt-sm.flex.items-center.justify-between {
+          display: none;
+          border: 5px solid black;
           margin: 10px;
         }
       }
     }
 
-    // ANSWER
-    > :not(.mb-lg) {
-      border: 5px dashed red;
+    // related questions container
+    // > :nth-child(3) {
+    > [class=''] {
+      display: none;
 
-      // ANSWER_HEADER
-      > .flex {
-        border: 5px solid black;
-        margin: 10px;
+      border: 5px solid orange;
 
-        // perplexity icon
-        [color='super'] > :first-child svg {
-          background-color: aqua;
-          max-height: 20px;
-        }
-
-        // ANSWER_HEADER_TITLE
-        [color='super'] > :last-child {
-          background-color: pink;
-        }
+      // RELATED_TITLE
+      [color='super'] > :last-child {
+        background-color: pink;
       }
-
-      // ANSWER_CONTENT
-      > .mb-md {
-        border: 5px solid black;
-        margin: 10px;
+      // RELATED_CONTENT
+      > div > div > .divide-y {
+        border: 5px dashed blue;
       }
-
-      // icons container
-      > .mt-sm.flex.items-center.justify-between {
-        border: 5px solid black;
-        margin: 10px;
+      // icons
+      svg {
+        background-color: aqua;
+        max-height: 20px;
       }
     }
   }
 
-  // related questions container
-  // > :nth-child(3) {
-  > [class=''] {
+  // QA_PAIR_SEARCH
+  .col-span-4 {
     display: none;
-
-    border: 5px solid orange;
-
-    // RELATED_TITLE
-    [color='super'] > :last-child {
-      background-color: pink;
-    }
-    // RELATED_CONTENT
-    > div > div > .divide-y {
-      border: 5px dashed blue;
-    }
-    // icons
-    svg {
-      background-color: aqua;
-      max-height: 20px;
-    }
   }
+}
+
+// ASK_FOLLOW_UP ("Ask follow-up" question <input> box)
+.pointer-events-none {
+  display: none;
 }
