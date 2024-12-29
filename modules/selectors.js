@@ -1,7 +1,7 @@
-import { MAIN_CONTAINER, QA_PAIR_CONTAINER, PAIR_LEFT, QUESTION, ANSWER } from './constants.js'
+import { CHATS_CONTAINER, QA_PAIR_CONTAINER, PAIR_LEFT, QUESTION, ANSWER } from './constants.js'
 
 export const selectors = {
-  MAIN_CONTAINER,
+  CHATS_CONTAINER,
   QA_PAIR_CONTAINER,
   PAIR_LEFT,
   CHAT,

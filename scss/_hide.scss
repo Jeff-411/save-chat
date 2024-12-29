@@ -1,0 +1,15 @@
+.col-span-8 {
+  // QUESTION - "Edit Query" button container
+  > .my-md h1 + div,
+  // ANSWER 
+  // - sources container
+  > :not(.my-md):not([class='']) > .mb-lg,
+  // - div containing perplexity icon
+  > :not(.my-md):not([class='']) > :not(.mb-lg) > .flex [color='super'] > :first-child,
+  // - icons container
+  > :not(.my-md):not([class='']) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between,
+  // related questions container
+   > [class=''] {
+    display: none;
+  }
+}

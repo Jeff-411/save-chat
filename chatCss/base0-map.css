@@ -1,17 +1,21 @@
+/* PAIR_LEFT */
 .col-span-8 > div {margin-bottom: 10px;}
 
-/* QUESTION -----------------------------------------------------------*/
+/* QUESTION_CONTAINER */
 .col-span-8 > :nth-child(1) {border: 5px solid red;}
+/* QUESTION_TEXT */
+.col-span-8 > :nth-child(1) h1 {border: 5px dotted blue;}
 /* "Edit Query" button */
-.col-span-8 > :nth-child(1) h1 + div {background-color: aqua;}
+.col-span-8 > :nth-child(1) h1 + div {background-color: pink;}
 
-/* ANSWER -------------------------------------------------------------*/
+/* ANSWER_CONTAINER */
 .col-span-8 > :nth-child(2) {border: 5px solid blue;}
 /* perplexity icon */
 .col-span-8 > :nth-child(2) > div > :first-child {background-color: yellow;}
-/* bottom buttons row */
+/* icons container */
 .col-span-8 > :nth-child(2) .mt-sm.flex.items-center.justify-between {border: 5px solid black;}
 
-/* RELATED ------------------------------------------------------------*/
+/* RELATED_CONTAINER */
 .col-span-8 > :nth-child(3) {border: 5px solid green;}
+/* icons container */
 .col-span-8 > :nth-child(3) svg {background-color: orange;}

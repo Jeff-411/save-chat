@@ -1,23 +1,34 @@
-/* ICONS --------------------------------------------------------------------*/
-/* "Edit Query" button */
-.col-span-8 > :nth-child(1) h1 + div {display: none;}
-/* icon - perplexity */
-.col-span-8 > :nth-child(2) > div > :first-child {display: none;}
-/* icons - answer - bottom row */
-.col-span-8 > :nth-child(2) .mt-sm.flex.items-center.justify-between {display: none;}
-/* icons - related questions section */
-.col-span-8 > :nth-child(3) svg {display: none;}
+.col-span-8 > .my-md h1 + div,
+.col-span-8 > :not(.my-md):not([class=""]) > .mb-lg,
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :first-child,
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between,
+.col-span-8 > [class=""] {
+  display: none;
+}
 
-/* CONTAINERS ---------------------------------------------------------------*/
-/* all children */
-.col-span-8 > div {margin-bottom: 10px;}
-/* question */
-.col-span-8 > :nth-child(1) {border: 5px solid red;}
-/* answer */
-.col-span-8 > :nth-child(2) {border: 5px solid blue;}
-/* related questions */
-.col-span-8 > :nth-child(3) {border: 5px solid green;}
-
-/* ELEMENTS -----------------------------------------------------------------*/
-/* title (question text) */
-.col-span-8 h1 {background-color: pink;}
+.col-span-8 > div {
+  margin-bottom: 10px;
+}
+.col-span-8 > .my-md {
+  border: 5px solid red;
+}
+.col-span-8 > .my-md h1 {
+  border: 5px dashed blue;
+}
+.col-span-8 > :not(.my-md):not([class=""]) {
+  border: 5px solid blue;
+}
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) {
+  border: 5px dashed red;
+}
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex {
+  border: 5px solid black;
+  margin: 10px;
+}
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :last-child {
+  background-color: pink;
+}
+.col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mb-md {
+  border: 5px solid black;
+  margin: 10px;
+}
