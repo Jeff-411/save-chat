@@ -1,0 +1,36 @@
+# Full Selector Paths
+
+- THREAD
+  - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div`
+  - QA_PAIR
+    - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg`
+    - QA_PAIR_CHAT
+      - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8`
+      - QA_PAIR_CHAT_Q
+        - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > .my-md`
+        - Q_QUESTION
+          - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 .group\/query`
+          - Q_QUESTION_THREAD_TITLE
+            - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 h1.group\/query`
+        - Q_QUESTION_ICON_CONTAINER
+          - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 .group\/query + div`
+      - QA_PAIR_CHAT_A
+        - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class=''])`
+        - A_SOURCES
+          - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > .mb-lg`
+        - A_ANSWER
+          - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > :not(.mb-lg)`
+          - A_ANSWER_HEADER
+            - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > :not(.mb-lg) > .flex [color="super"]`
+            - A_ANSWER_HEADER_ICON_CONTAINER
+              - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > :not(.mb-lg) > .flex [color="super"] > :first-child`
+            - A_ANSWER_HEADER_TITLE
+              - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > :not(.mb-lg) > .flex [color="super"] > :last-child`
+          - A_ANSWER_CONTENT
+            - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > div > .mb-md`
+          - A_ANSWER_ICONS_CONTAINER
+            - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) .mt-sm.flex.items-center.justify-between`
+    - QA_PAIR_SEARCH
+      - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-4`
+  - ASK_FOLLOW_UP
+    - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pointer-events-none`
