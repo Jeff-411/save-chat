@@ -1,4 +1,6 @@
-function extractToMd(html) {
+// extractToMarkdown.js
+
+export const extractToMd1 = html => {
   // 1. Setup
   const parser = new DOMParser()
   const doc = parser.parseFromString(html, 'text/html')
@@ -19,5 +21,3 @@ function extractToMd(html) {
 
   return md.trim()
 }
-
-export default extractToMd
