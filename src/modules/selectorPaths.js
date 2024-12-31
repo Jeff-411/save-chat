@@ -1,5 +1,20 @@
-// Parent element
-export const THREAD = `main .isolate:nth-of-type(2) .pb-\\[144px\\] > .relative > div`
+// IMPORTANT ==================================================================
+// There are 2 versions of the THREAD_OUTER_CONTAINER constant in this file:
+//    1. `main .isolate:nth-of-type(2) .pb-\\[144px\\]`, and
+//    2. `.pb-\\[144px\\]`
+//
+// Use v:1 for extracting THREAD programmatically.
+// Use v:2 for testing purposes during development (i.e. when you copy/paste
+// the outerHTML of the `.pb-\\[144px\\]` element into a test file).
+// ============================================================================
+
+// v:1 Outer THREAD container element
+// export const THREAD_OUTER_CONTAINER = `main .isolate:nth-of-type(2) .pb-\\[144px\\]` // v:1
+
+// v:2 Outer THREAD container element
+export const THREAD_OUTER_CONTAINER = `.pb-\\[144px\\]` // v:2
+export const THREAD_PARENT = `${THREAD_OUTER_CONTAINER} > .relative`
+export const THREAD = `${THREAD_PARENT} > div`
 
 // Q/A Pair
 export const QA_PAIR = `${THREAD} > .pb-lg`

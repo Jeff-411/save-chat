@@ -1,6 +1,19 @@
-// Note:
-// These are the children of the parent "THREAD" element
-// defined in`modules/selectorPaths.js`.
+// ------------------------------------------------------------------------------------------------
+// ELEMENTS TO BE REMOVED DURING THE EXTRACTION PHASE
+// (See `modules/selectorPaths.js` for the selector of the named constants.
+
+// nth-child(2) of the v:2 THREAD_OUTER_CONTAINER
+.fixed.bottom-0,
+// v:2 THREAD_OUTER_CONTAINER > THREAD_PARENT > THREAD > ASK_FOLLOW_UP ("Ask follow-up" <input>)
+.pointer-events-none,
+// QA_PAIR_SEARCH
+.col-span-4 {
+  display: none;
+}
+
+// ------------------------------------------------------------------------------------------------
+// Children of v:2 THREAD_OUTER_CONTAINER > THREAD_PARENT > THREAD >
+//
 
 // QA_PAIR
 .pb-lg {
@@ -114,7 +127,6 @@
     }
 
     // related questions container
-    // > :nth-child(3) {
     > [class=''] {
       display: none;
 
@@ -135,14 +147,4 @@
       }
     }
   }
-
-  // QA_PAIR_SEARCH
-  .col-span-4 {
-    display: none;
-  }
-}
-
-// ASK_FOLLOW_UP ("Ask follow-up" question <input> box)
-.pointer-events-none {
-  display: none;
 }
