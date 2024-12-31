@@ -11,6 +11,7 @@
 
 ## Root directories
 
+- `_CHAT/` - temporary Markdown files
 - `_DEV/` - Development files and temporary tests
 - `.vscode/` - VS Code workspace settings
 - `chatCss/` - Styled chat element components
