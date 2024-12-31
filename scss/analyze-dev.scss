@@ -23,7 +23,7 @@
       }
       // Q_QUESTION_THREAD_TITLE
       h1.group\/query {
-        background-color: yellow;
+        background-color: lightsteelblue;
       }
 
       // Q_QUESTION_ICON_CONTAINER
@@ -34,14 +34,13 @@
       }
     }
 
-    /* QA_PAIR_CHAT_A
-     neither the "Question" nor "Related questions" containers */
-
+    // QA_PAIR_CHAT_A (neither the "Question" nor "Related questions" containers)
     > :not(.my-md):not([class='']) {
       border: 5px solid blue;
 
       // A_SOURCES
       > .mb-lg {
+        display: none;
         border: 5px dashed red;
         margin-bottom: 20px;
 
@@ -81,7 +80,7 @@
 
         // A_ANSWER_HEADER
         > .flex [color='super'] {
-          border: 5px solid black;
+          // border: 5px solid black;
           margin: 10px;
 
           // A_ANSWER_HEADER_ICON_CONTAINER
@@ -93,6 +92,7 @@
 
           // ANSWER_HEADER_TITLE
           > :last-child {
+            display: none;
             background-color: aqua;
           }
         }
@@ -101,13 +101,13 @@
         > .mb-md {
           border: 5px solid black;
           margin: 10px;
-          background-color: orange;
+          background-color: yellow;
         }
 
         // A_ANSWER_ICONS_CONTAINER
         > .mt-sm.flex.items-center.justify-between {
           display: none;
-          border: 5px solid black;
+          // border: 5px solid black;
           margin: 10px;
         }
       }

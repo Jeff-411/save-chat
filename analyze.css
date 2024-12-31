@@ -1,7 +1,3 @@
-.pb-lg .col-span-8 {
-  /* QA_PAIR_CHAT_A
-   neither the "Question" nor "Related questions" containers */
-}
 .pb-lg .col-span-8 > div {
   margin-bottom: 10px;
 }
@@ -14,7 +10,7 @@
   background-color: lime;
 }
 .pb-lg .col-span-8 > .my-md h1.group\/query {
-  background-color: yellow;
+  background-color: lightsteelblue;
 }
 .pb-lg .col-span-8 > .my-md .group\/query + div {
   display: none;
@@ -25,6 +21,7 @@
   border: 5px solid blue;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg {
+  display: none;
   border: 5px dashed red;
   margin-bottom: 20px;
 }
@@ -51,7 +48,6 @@
   border: 5px dashed red;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] {
-  border: 5px solid black;
   margin: 10px;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :first-child {
@@ -60,16 +56,16 @@
   max-height: 20px;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :last-child {
+  display: none;
   background-color: aqua;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mb-md {
   border: 5px solid black;
   margin: 10px;
-  background-color: orange;
+  background-color: yellow;
 }
 .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between {
   display: none;
-  border: 5px solid black;
   margin: 10px;
 }
 .pb-lg .col-span-8 > [class=""] {

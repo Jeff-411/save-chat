@@ -1,4 +1,4 @@
-// Extracted parent element
+// Parent element
 export const THREAD = `main .isolate:nth-of-type(2) .pb-\\[144px\\] > .relative > div`
 
 // Q/A Pair
