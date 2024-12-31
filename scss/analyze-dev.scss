@@ -6,14 +6,13 @@
 .fixed.bottom-0,
 // v:2 THREAD_OUTER_CONTAINER > THREAD_PARENT > THREAD > ASK_FOLLOW_UP ("Ask follow-up" <input>)
 .pointer-events-none,
-// QA_PAIR_SEARCH
+// v:2 THREAD_OUTER_CONTAINER > THREAD_PARENT > THREAD > QA_PAIR_SEARCH
 .col-span-4 {
   display: none;
 }
 
 // ------------------------------------------------------------------------------------------------
 // Children of v:2 THREAD_OUTER_CONTAINER > THREAD_PARENT > THREAD >
-//
 
 // QA_PAIR
 .pb-lg {
