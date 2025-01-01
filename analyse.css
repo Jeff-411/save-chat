@@ -1,90 +1,94 @@
-.fixed.bottom-0,
-.pointer-events-none,
-.col-span-4 {
+.pb-\[144px\] > .fixed.bottom-0 {
   display: none;
 }
 
-.pb-lg .col-span-8 > div {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > div {
   margin-bottom: 10px;
 }
-.pb-lg .col-span-8 > .my-md {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > .my-md {
   border: 5px solid red;
 }
-.pb-lg .col-span-8 > .my-md .group\/query {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > .my-md .group\/query {
   border: 5px solid black;
   margin: 10px;
   background-color: lime;
 }
-.pb-lg .col-span-8 > .my-md h1.group\/query {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > .my-md h1.group\/query {
   background-color: lightsteelblue;
 }
-.pb-lg .col-span-8 > .my-md .group\/query + div {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > .my-md .group\/query + div {
   display: none;
   background-color: aqua;
   max-height: 20px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) {
   border: 5px solid blue;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg {
   display: none;
   border: 5px dashed red;
   margin-bottom: 20px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex {
   border: 5px solid black;
   margin: 10px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex [color=super] > :first-child svg {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex [color=super] > :first-child svg {
   background-color: aqua;
   max-height: 20px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex [color=super] > :last-child {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .flex [color=super] > :last-child {
   background-color: pink;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .-mx-md {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .-mx-md {
   border: 5px solid black;
   margin: 10px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .-mx-md .grid > div {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > .mb-lg > div > div > .-mx-md .grid > div {
   border: 3px solid red;
   margin: 10px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) {
   border: 5px dashed red;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] {
   margin: 10px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :first-child {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :first-child {
   display: none;
   background-color: orange;
   max-height: 20px;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :last-child {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .flex [color=super] > :last-child {
   display: none;
   background-color: aqua;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mb-md {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mb-md {
   border: 5px solid black;
   margin: 10px;
   background-color: yellow;
 }
-.pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between {
   display: none;
   margin: 10px;
 }
-.pb-lg .col-span-8 > [class=""] {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > [class=""] {
   display: none;
   border: 5px solid orange;
 }
-.pb-lg .col-span-8 > [class=""] [color=super] > :last-child {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > [class=""] [color=super] > :last-child {
   background-color: pink;
 }
-.pb-lg .col-span-8 > [class=""] > div > div > .divide-y {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > [class=""] > div > div > .divide-y {
   border: 5px dashed blue;
 }
-.pb-lg .col-span-8 > [class=""] svg {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > [class=""] svg {
   background-color: aqua;
   max-height: 20px;
+}
+.pb-\[144px\] > .relative > div .pb-lg .col-span-4 {
+  display: none;
+}
+.pb-\[144px\] > .relative > div .pointer-events-none {
+  display: none;
 }

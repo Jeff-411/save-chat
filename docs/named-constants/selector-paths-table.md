@@ -19,5 +19,5 @@
 | A_ANSWER_HEADER_TITLE          | `${A_ANSWER_HEADER} > :last-child`                           |
 | A_ANSWER_CONTENT               | `${QA_PAIR_CHAT_A} > div > .mb-md`                           |
 | A_ANSWER_ICONS_CONTAINER       | `${QA_PAIR_CHAT_A} .mt-sm.flex.items-center.justify-between` |
-| QA_PAIR_SEARCH                 | `${QA_PAIR} > div> .col-span-4`                              |
+| QA_PAIR_OPTIONS                | `${QA_PAIR} > div> .col-span-4`                              |
 | ASK_FOLLOW_UP                  | `${THREAD} > .pointer-events-none`                           |

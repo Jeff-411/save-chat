@@ -17,5 +17,5 @@
                 - A_ANSWER_HEADER_TITLE
               - A_ANSWER_CONTENT
               - A_ANSWER_ICONS_CONTAINER
-        - QA_PAIR_SEARCH
+        - QA_PAIR_OPTIONS
       - ASK_FOLLOW_UP
