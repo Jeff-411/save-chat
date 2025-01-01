@@ -15,6 +15,7 @@
 -->
 
 <!-- cSpell: disable -->
+<!-- prettier-ignore -->
 <html>
   <head>
     <link rel="stylesheet" href="./analyze.css" />
@@ -23,6 +24,7 @@
   <body>
     <!-- Note: Outer THREAD Container -->
     <div class="mx-auto size-full max-w-threadWidth pb-[144px]">
+      <!-- Note: Inner THREAD Container -->
       <div
         class="relative border-borderMain/50 ring-borderMain/50 divide-borderMain/50 dark:divide-borderMainDark/50 dark:ring-borderMainDark/50 dark:border-borderMainDark/50 bg-background dark:bg-backgroundDark">
         <!-- Note: THREAD -->
@@ -465,9 +467,10 @@
                               <div class="w-full md:max-w-[90vw]">
                                 <pre
                                   class="not-prose w-full rounded font-mono text-sm font-extralight"><div class="codeWrapper text-textMainDark selection:!text-superDark selection:bg-superDuper/10 bg-offset dark:bg-offsetDark my-md relative flex flex-col rounded font-mono text-sm font-thin"><div class="top-headerHeight translate-y-xs -translate-x-xs bottom-xl mb-xl sticky flex h-0 items-start justify-end"><button type="button" class="focus-visible:bg-offsetPlus dark:focus-visible:bg-offsetPlusDark md:hover:bg-offsetPlus text-textOff dark:text-textOffDark md:hover:text-textMain dark:md:hover:bg-offsetPlusDark  dark:md:hover:text-textMainDark font-sans focus:outline-none outline-none outline-transparent transition duration-300 ease-out font-sans  select-none items-center relative group/button  justify-center text-center items-center rounded-full cursor-pointer active:scale-[0.97] active:duration-150 active:ease-outExpo origin-center whitespace-nowrap inline-flex text-sm aspect-square h-8"><div class="flex items-center min-w-0 justify-center gap-xs"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" class="svg-inline--fa fa-copy fa-fw fa-1x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"></path></svg></div></button></div><div class="-mt-xl"><div><div class="text-text-200 bg-background-300 py-xs px-sm inline-block rounded-br rounded-tl-[3px] font-thin">text</div></div><div class="pr-lg"><span style="font-size: inherit; font-family: inherit; background: transparent; color: rgb(197, 200, 198); border-radius: 3px; display: flex; line-height: 1.42857; overflow-x: auto; white-space: pre;"><code style="font-size: inherit; font-family: inherit; line-height: 1.66667; padding: 8px; white-space: pre-wrap;"><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"><span>.pb-[144px] .pb-lg.border-borderMain/50 {
-</span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;">  display: none;
-</span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;">}
-</span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span></div></div></div></pre>
+                                    </span></span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;">  display: none;
+                                    </span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;">}
+                                    </span><span style="opacity: 1; font-size: inherit; line-height: 1.42857; color: rgb(197, 200, 198); background-color: transparent; flex-shrink: 0; padding: 8px; text-align: right; user-select: none;"></span></code></span></div></div></div>
+                                </pre>
                               </div>
                               <span>This selector is preferable for several reasons:</span>
                               <ol class="marker:text-textOff list-decimal pl-8">
@@ -2454,7 +2457,7 @@
                       class="pointer-events-none absolute -inset-sm rounded-md border border-border/30 opacity-0 duration-150 group-hover/title:opacity-100"></div>
                     <div
                       class="group/query relative whitespace-pre-line break-words [word-break:break-word] default font-display text-3xl font-regular text-textMain dark:text-textMainDark selection:bg-super/50 selection:text-textMain dark:selection:bg-superDuper/10 dark:selection:text-superDark">
-                      Here's the scss selector: 'main .isolate:nth-of-type(2) .pb-[144px]'. Why do I
+                      Here's the scss selector: 'main .isolate:nth-of-type(2) . pb-[144px]'. Why do I
                       need to use the 'main .isolate:nth-of-type(2) .pb-\[144px\]' syntax to search
                       for it in DevTools?
                     </div>
