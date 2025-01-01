@@ -1,21 +1,29 @@
 # Project structure
 
-## Root files:
+## Root files
 
-- `analyze.html` contains the Perplexity DOM element we are analysing
-- `analyze.css` is the stylesheet for `analyze.html`
-- `app.js` accesses the `analyze.html` DOM and is the entry point for Bookmarklet development
-- `sever.js` serves `analyze.html` at `http://localhost:3000`
-- `package.json`
+- `analyze.html` - Contains the Perplexity DOM element we are analyzing
+- `analyze.css` - Stylesheet for analyze.html
+- `markdown.css` - Stylesheet for markdown output (symlink)
+- `package.json` - Project configuration and dependencies
+- `README.md` - Project documentation
+- `server.js` - Serves analyze.html at http://localhost:5000
 
 ## Root directories
 
-- `chatCss/` contains descriptively-named files for styling the extracted chat's html elements.
-- `docs/` contains files and folders to document and support the development process.
-- `downloads/` contains Perplexity chats downloaded by existing Chrome extensions.
-- `html/` folder contains the Perplexity DOM, broken down into increasingly specific elements in order to identify the paths to key selectors.
-- `html2-chat_element/` contains increasingly complex examples of the chat element we want to extract.
-- `modules/` contains:
-  - an initial set of named constants [[->]](../modules/constants.js)
-  - a `selectors` object built on the named constants [[->]] and
-  - a `TestSelectors` function for verifying the selectors
+- `_CHAT/` - temporary Markdown files
+- `_DEV/` - Development files and temporary tests
+- `.vscode/` - VS Code workspace settings
+- `chatCss/` - Styled chat element components
+- `docs/` - Project documentation and development notes
+- `html/` - Perplexity DOM analysis files
+- `html2-chat_element/` - Chat element examples
+- `scss/` - SCSS source files
+- `src/` - Source code
+  - `app.js` - Main application entry point
+  - `modules/` - JavaScript modules
+    - `extractToMd.js` - HTML to Markdown converter
+
+## Main functionality
+
+The application serves analyze.html locally and uses extractToMd.js to convert Perplexity chat content to Markdown format.

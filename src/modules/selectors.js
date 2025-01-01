@@ -1,0 +1,10 @@
+import { CHATS_CONTAINER, QA_PAIR_CONTAINER, PAIR_LEFT, QUESTION, ANSWER } from './constants.js'
+
+export const selectors = {
+  CHATS_CONTAINER,
+  QA_PAIR_CONTAINER,
+  PAIR_LEFT,
+  CHAT,
+  QUESTION,
+  ANSWER,
+}
