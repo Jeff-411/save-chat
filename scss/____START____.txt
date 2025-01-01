@@ -1,0 +1,3 @@
+sass --watch scss/analyse-dev.scss analyse.css  --no-source-map
+
+local alias: sad

@@ -18,16 +18,16 @@ The project's root files and directories can be found in the **Project Structure
 
 ## Project status
 
-As indicated in the **Project Development Action Plan** [here](./docs/action-plan.md) the project is now on **Step 2** of the **DOM Analysis Phase** which focuses on generating css selectors for increasingly complex **Chat** structures.
+As indicated in the **Project Development Action Plan** [here](./docs/project-action-plan.md) the project is now on **Step 2** of the **DOM Analysis Phase** which focuses on generating css selectors for increasingly complex **Chat** structures.
 
-## Workflow
+### Analysis Phase Workflow
 
-Use the `analyze.html` and `analyze.css` tools in the root directory to analyze the Perplexity DOM:
+Use the `analyse.html` and `analyse.css` files in the root directory to analyse the Perplexity DOM:
 
-1. Start the local server running at `http://localhost:3000`
-2. Paste the content of the file to be analyzed into `analyze.html`
-3. Open `analyze.css` to begin analysing its DOM
-4. Save the result to a new file in the `chatCss` directory for use in generating named constants for the css selectors during the final phase of the DOM analysis.
+1. Open `analyse.html` with Live Server
+2. Paste the content of the file to be analysed into `analyse.html`
+3. Open `analyse.css` to begin analysing its DOM
+4. Save the result to a new file for use in generating named constants for the css selectors during the final phase of the DOM analysis.
 
 ## Usage
 
