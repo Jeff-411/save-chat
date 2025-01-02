@@ -33,7 +33,7 @@
               - A_ANSWER_CONTENT
                 - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) > div > .mb-md`
               - A_ANSWER_ICONS_CONTAINER
-                - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) .mt-sm.flex.items-center.justify-between`
+                - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-8 > :not(.my-md):not([class='']) .mt-sm`
         - QA_PAIR_OPTIONS
           - `main .isolate:nth-of-type(2) .pb-\[144px\] > .relative > div > .pb-lg > div > .col-span-4`
       - ASK_FOLLOW_UP

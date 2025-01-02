@@ -68,7 +68,7 @@
   margin: 10px;
   background-color: yellow;
 }
-.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm.flex.items-center.justify-between {
+.pb-\[144px\] > .relative > div .pb-lg .col-span-8 > :not(.my-md):not([class=""]) > :not(.mb-lg) > .mt-sm {
   display: none;
   margin: 10px;
 }
